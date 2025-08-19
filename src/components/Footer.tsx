@@ -52,9 +52,11 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-                         <div className="mb-4">
-                                                               <Logo logoType="combined" imageSrc="/logo.jpeg" size="xl" showText={true} />
-             </div>
+                                     <div className="mb-4">
+              <div className="bg-white/90 rounded-lg p-4 inline-block">
+                <Logo logoType="image" imageSrc="/logo.svg" size="lg" />
+              </div>
+            </div>
             <p className="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
               Your trusted real estate platform connecting Zimbabwean diaspora with local property opportunities. 
               We're building bridges between communities and creating investment opportunities for the future.

@@ -15,13 +15,13 @@ const Logo: React.FC<LogoProps> = ({
   className = '', 
   showText = true,
   logoType = 'combined',
-  imageSrc = '/logo.jpeg'
+  imageSrc = '/logo.svg' // Use static path for now
 }) => {
   const sizeClasses = {
-    sm: 'w-10 h-10',
-    md: 'w-16 h-16',
-    lg: 'w-20 h-20',
-    xl: 'w-28 h-28'
+    sm: 'w-12 h-12',
+    md: 'w-18 h-18',
+    lg: 'w-25 h-25',
+    xl: 'w-35 h-35'
   };
 
   const colorClasses = {
@@ -46,12 +46,16 @@ const Logo: React.FC<LogoProps> = ({
 
   // If logoType is 'image', only show image
   if (logoType === 'image') {
+    console.log('Rendering image-only logo with src:', imageSrc);
     return (
-      <div className={`${sizeClasses[size]} flex-shrink-0 ${className}`}>
+      <div className={`${sizeClasses[size]} flex-shrink-0 ${className} flex items-center justify-center`}>
         <img
           src={imageSrc}
           alt="Mukamba Gateway Logo"
           className="w-full h-full object-contain"
+          style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+          onLoad={() => console.log('Logo image loaded successfully')}
+          onError={(e) => console.error('Logo image failed to load:', e)}
         />
       </div>
     );
@@ -61,11 +65,14 @@ const Logo: React.FC<LogoProps> = ({
   return (
     <div className={`flex items-center space-x-4 ${className}`}>
       {/* Logo Image */}
-      <div className={`${sizeClasses[size]} flex-shrink-0`}>
+      <div className={`${sizeClasses[size]} flex-shrink-0 flex items-center justify-center`}>
         <img
           src={imageSrc}
           alt="Mukamba Gateway Logo"
           className="w-full h-full object-contain"
+          style={{ maxWidth: '100%', height: 'auto', display: 'block' }}
+          onLoad={() => console.log('Logo image loaded successfully')}
+          onError={(e) => console.error('Logo image failed to load:', e)}
         />
       </div>
       
@@ -85,3 +92,5 @@ const Logo: React.FC<LogoProps> = ({
 };
 
 export default Logo;
+
+ 

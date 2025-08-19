@@ -21,14 +21,30 @@ export interface EarlyAccessSignup {
 
 // Function to insert a new signup
 export const insertSignup = async (signupData: Omit<EarlyAccessSignup, 'id' | 'created_at'>) => {
-  const { data, error } = await supabase
-    .from('early_access_signups')
-    .insert([signupData])
-    .select();
-
-  if (error) {
-    throw new Error(error.message);
+  // Check if Supabase is properly configured
+  if (!supabaseUrl || !supabaseAnonKey) {
+    throw new Error('Supabase configuration is missing. Please check your environment variables.');
   }
 
-  return data;
+  console.log('Attempting to insert signup data:', signupData);
+  console.log('Supabase URL configured:', !!supabaseUrl);
+  console.log('Supabase Key configured:', !!supabaseAnonKey);
+
+  try {
+    const { data, error } = await supabase
+      .from('early_access_signups')
+      .insert([signupData])
+      .select();
+
+    if (error) {
+      console.error('Supabase error:', error);
+      throw new Error(`Database error: ${error.message}`);
+    }
+
+    console.log('Signup successful:', data);
+    return data;
+  } catch (err) {
+    console.error('Insert signup error:', err);
+    throw err;
+  }
 };

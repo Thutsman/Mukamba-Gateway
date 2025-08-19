@@ -137,8 +137,21 @@ const SignupModal: React.FC<SignupModalProps> = ({ onClose }) => {
       setIsSubmitted(true);
     } catch (error) {
       console.error('Submission error:', error);
-      // You could add error state handling here
-      alert('There was an error submitting your form. Please try again.');
+      
+      // Provide more specific error messages
+      let errorMessage = 'There was an error submitting your form. Please try again.';
+      
+      if (error instanceof Error) {
+        if (error.message.includes('Supabase configuration is missing')) {
+          errorMessage = 'Server configuration error. Please contact support.';
+        } else if (error.message.includes('Database error')) {
+          errorMessage = 'Database connection error. Please try again later.';
+        } else if (error.message.includes('network') || error.message.includes('timeout')) {
+          errorMessage = 'Network connection error. Please check your internet connection and try again.';
+        }
+      }
+      
+      alert(errorMessage);
     } finally {
       setIsSubmitting(false);
     }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle, AlertCircle } from 'lucide-react';
-import { insertSignup } from '../lib/supabase';
+import { insertSignup, testSupabaseConnection } from '../lib/supabase';
 
 interface SignupModalProps {
   onClose: () => void;
@@ -119,13 +119,18 @@ const SignupModal: React.FC<SignupModalProps> = ({ onClose }) => {
 
     setIsSubmitting(true);
 
+    // Test Supabase connection first
+    console.log('Testing Supabase connection...');
+    const connectionTest = await testSupabaseConnection();
+    console.log('Connection test result:', connectionTest);
+
     try {
       // Prepare data for Supabase
       const signupData = {
         first_name: formData.firstName,
         last_name: formData.lastName,
         email: formData.email,
-        phone: formData.phone,
+        phone: formData.phone.toString(), // Ensure phone is treated as text
         current_location: formData.currentLocation,
         user_type: formData.userType,
         interest: formData.interest,

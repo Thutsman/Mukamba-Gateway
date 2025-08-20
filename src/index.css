@@ -33,29 +33,37 @@
   
   /* iPhone and small mobile devices (max-width: 480px) */
   @media screen and (max-width: 480px) {
-    /* Header adjustments for iPhone - Increased to accommodate larger logo */
+    /* Header adjustments for iPhone - Reduced by 25% */
     header {
-      height: 5.5rem !important; /* 88px - increased from 64px */
-      min-height: 5.5rem !important;
+      height: 4.125rem !important; /* 66px - reduced by 25% from 88px */
+      min-height: 4.125rem !important;
     }
     
-    /* Logo sizing for iPhone - Increased by 150% from original */
+    /* Logo sizing for iPhone - Increased by 50% from current size */
     .header-logo {
-      width: 4.5rem !important; /* 72px - 150% of original 48px */
-      height: 4.5rem !important; /* 72px - 150% of original 48px */
-      max-width: 4.5rem !important;
-      max-height: 4.5rem !important;
+      width: 6.75rem !important; /* 108px - 50% increase from 72px */
+      height: 6.75rem !important; /* 108px - 50% increase from 72px */
+      max-width: 6.75rem !important;
+      max-height: 6.75rem !important;
+    }
+    
+    /* Ensure hamburger menu button is properly positioned on iPhone */
+    header button[aria-label="Toggle menu"] {
+      margin-left: auto !important;
+      position: relative !important;
+      z-index: 1000 !important;
+      pointer-events: auto !important;
     }
     
     /* Header text sizing for iPhone - Increased proportionally */
     .header-text {
-      font-size: 1.125rem !important; /* 18px - increased from 14px */
-      line-height: 1.5rem !important;
+      font-size: 1.375rem !important; /* 22px - increased from 18px */
+      line-height: 1.75rem !important;
     }
     
-    /* Hero section padding for iPhone - Adjusted for larger header */
+    /* Hero section padding for iPhone - Adjusted for reduced header */
     .hero-content {
-      padding-top: 6.5rem !important; /* 104px - accounts for increased header height */
+      padding-top: 5.125rem !important; /* 82px - accounts for reduced header height */
     }
     
     /* Hero title sizing for iPhone */
@@ -79,29 +87,37 @@
   
   /* Mobile general (max-width: 768px) */
   @media screen and (max-width: 768px) {
-    /* Header adjustments for mobile - Increased to accommodate larger logo */
+    /* Header adjustments for mobile - Reduced by 25% */
     header {
-      height: 6rem !important; /* 96px - increased from 72px */
-      min-height: 6rem !important;
+      height: 4.5rem !important; /* 72px - reduced by 25% from 96px */
+      min-height: 4.5rem !important;
     }
     
-    /* Logo sizing for mobile - Increased by 150% from original */
+    /* Logo sizing for mobile - Increased by 50% from current size */
     .header-logo {
-      width: 5.1rem !important; /* 81.6px - 150% of original 54.4px */
-      height: 5.1rem !important; /* 81.6px - 150% of original 54.4px */
-      max-width: 5.1rem !important;
-      max-height: 5.1rem !important;
+      width: 7.65rem !important; /* 122.4px - 50% increase from 81.6px */
+      height: 7.65rem !important; /* 122.4px - 50% increase from 81.6px */
+      max-width: 7.65rem !important;
+      max-height: 7.65rem !important;
+    }
+    
+    /* Ensure hamburger menu button is properly positioned on mobile */
+    header button[aria-label="Toggle menu"] {
+      margin-left: auto !important;
+      position: relative !important;
+      z-index: 1000 !important;
+      pointer-events: auto !important;
     }
     
     /* Header text sizing for mobile - Increased proportionally */
     .header-text {
-      font-size: 1.25rem !important; /* 20px - increased from 16px */
-      line-height: 1.75rem !important;
+      font-size: 1.5rem !important; /* 24px - increased from 20px */
+      line-height: 2rem !important;
     }
     
-    /* Hero section padding for mobile - Adjusted for larger header */
+    /* Hero section padding for mobile - Adjusted for reduced header */
     .hero-content {
-      padding-top: 7rem !important; /* 112px - accounts for increased header height */
+      padding-top: 5.5rem !important; /* 88px - accounts for reduced header height */
     }
     
     /* Hero title sizing for mobile */
@@ -125,29 +141,37 @@
   
   /* Tablet (max-width: 1024px) */
   @media screen and (max-width: 1024px) {
-    /* Header adjustments for tablet - Increased to accommodate larger logo */
+    /* Header adjustments for tablet - Reduced by 25% */
     header {
-      height: 6.5rem !important; /* 104px - increased from 80px */
-      min-height: 6.5rem !important;
+      height: 4.875rem !important; /* 78px - reduced by 25% from 104px */
+      min-height: 4.875rem !important;
     }
     
-    /* Logo sizing for tablet - Increased by 150% from original */
+    /* Logo sizing for tablet - Increased by 50% from current size */
     .header-logo {
-      width: 5.7rem !important; /* 91.2px - 150% of original 60.8px */
-      height: 5.7rem !important; /* 91.2px - 150% of original 60.8px */
-      max-width: 5.7rem !important;
-      max-height: 5.7rem !important;
+      width: 8.55rem !important; /* 136.8px - 50% increase from 91.2px */
+      height: 8.55rem !important; /* 136.8px - 50% increase from 91.2px */
+      max-width: 8.55rem !important;
+      max-height: 8.55rem !important;
+    }
+    
+    /* Ensure hamburger menu button is properly positioned on tablet */
+    header button[aria-label="Toggle menu"] {
+      margin-left: auto !important;
+      position: relative !important;
+      z-index: 1000 !important;
+      pointer-events: auto !important;
     }
     
     /* Header text sizing for tablet - Increased proportionally */
     .header-text {
-      font-size: 1.375rem !important; /* 22px - increased from 18px */
-      line-height: 2rem !important;
+      font-size: 1.625rem !important; /* 26px - increased from 22px */
+      line-height: 2.25rem !important;
     }
     
-    /* Hero section padding for tablet - Adjusted for larger header */
+    /* Hero section padding for tablet - Adjusted for reduced header */
     .hero-content {
-      padding-top: 7.5rem !important; /* 120px - accounts for increased header height */
+      padding-top: 5.875rem !important; /* 94px - accounts for reduced header height */
     }
     
     /* Hero title sizing for tablet */
@@ -188,12 +212,48 @@
       overflow: hidden;
       contain: layout style paint;
     }
+    
+    /* Ensure hamburger menu button is clickable on iOS */
+    header button[aria-label="Toggle menu"] {
+      position: relative;
+      z-index: 1000 !important;
+      pointer-events: auto !important;
+      touch-action: manipulation;
+    }
+    
+    /* Ensure mobile menu has proper z-index */
+    header .md\\:hidden.overflow-hidden {
+      z-index: 999 !important;
+      position: relative;
+    }
   }
 
   /* Prevent orphaned words in titles */
   .card-title {
     word-break: keep-all;
     overflow-wrap: normal;
+  }
+  
+  /* Ensure hamburger menu button is always clickable */
+  header button[aria-label="Toggle menu"] {
+    position: relative;
+    z-index: 1000 !important;
+    pointer-events: auto !important;
+    touch-action: manipulation;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  /* Ensure mobile menu has proper z-index and positioning */
+  header .md\\:hidden.overflow-hidden {
+    z-index: 999 !important;
+    position: relative;
+  }
+  
+  /* Ensure header flex container doesn't interfere with button */
+  header .flex.items-center.justify-between {
+    position: relative;
+    z-index: 1;
   }
 }
 

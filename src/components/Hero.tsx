@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container-custom text-center text-white pt-24 sm:pt-28 md:pt-32">
+      <div className="relative z-10 container-custom text-center text-white hero-content">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
           className="max-w-4xl mx-auto"
         >
           <motion.h1 
-            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight px-4 sm:px-0"
+            className="hero-title font-bold mb-4 leading-tight px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
           />
           
           <motion.h2 
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 px-4 sm:px-0"
+            className="hero-subtitle font-semibold mb-4 px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -53,7 +53,7 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
           </motion.h2>
           
           <motion.p 
-            className="text-base sm:text-lg md:text-xl mb-8 text-gray-200 px-4 sm:px-0"
+            className="hero-description mb-8 text-gray-200 px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}

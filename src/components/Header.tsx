@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ onSignUp }) => {
               onClick={() => scrollToSection('hero')}
               className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-1"
             >
-              <Logo logoType="image" imageSrc="/logo.svg" size="xl" />
+              <Logo logoType="image" imageSrc="/logo.svg" size="xl" className="header-logo" />
             </button>
           </motion.div>
 

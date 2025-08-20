@@ -39,18 +39,18 @@
       min-height: 4rem !important;
     }
     
-    /* Logo sizing for iPhone */
+    /* Logo sizing for iPhone - Increased to ~75% of header height */
     .header-logo {
-      width: 2rem !important; /* 32px */
-      height: 2rem !important; /* 32px */
-      max-width: 2rem !important;
-      max-height: 2rem !important;
+      width: 3rem !important; /* 48px - ~75% of 64px */
+      height: 3rem !important; /* 48px - ~75% of 64px */
+      max-width: 3rem !important;
+      max-height: 3rem !important;
     }
     
     /* Header text sizing for iPhone */
     .header-text {
-      font-size: 0.75rem !important; /* 12px */
-      line-height: 1rem !important;
+      font-size: 0.875rem !important; /* 14px - increased from 12px */
+      line-height: 1.25rem !important;
     }
     
     /* Hero section padding for iPhone */
@@ -85,18 +85,18 @@
       min-height: 4.5rem !important;
     }
     
-    /* Logo sizing for mobile */
+    /* Logo sizing for mobile - Increased to ~75% of header height */
     .header-logo {
-      width: 2.5rem !important; /* 40px */
-      height: 2.5rem !important; /* 40px */
-      max-width: 2.5rem !important;
-      max-height: 2.5rem !important;
+      width: 3.4rem !important; /* 54.4px - ~75% of 72px */
+      height: 3.4rem !important; /* 54.4px - ~75% of 72px */
+      max-width: 3.4rem !important;
+      max-height: 3.4rem !important;
     }
     
     /* Header text sizing for mobile */
     .header-text {
-      font-size: 0.875rem !important; /* 14px */
-      line-height: 1.25rem !important;
+      font-size: 1rem !important; /* 16px - increased from 14px */
+      line-height: 1.5rem !important;
     }
     
     /* Hero section padding for mobile */
@@ -131,18 +131,18 @@
       min-height: 5rem !important;
     }
     
-    /* Logo sizing for tablet */
+    /* Logo sizing for tablet - Increased to ~75% of header height */
     .header-logo {
-      width: 3rem !important; /* 48px */
-      height: 3rem !important; /* 48px */
-      max-width: 3rem !important;
-      max-height: 3rem !important;
+      width: 3.8rem !important; /* 60.8px - ~75% of 80px */
+      height: 3.8rem !important; /* 60.8px - ~75% of 80px */
+      max-width: 3.8rem !important;
+      max-height: 3.8rem !important;
     }
     
     /* Header text sizing for tablet */
     .header-text {
-      font-size: 1rem !important; /* 16px */
-      line-height: 1.5rem !important;
+      font-size: 1.125rem !important; /* 18px - increased from 16px */
+      line-height: 1.75rem !important;
     }
     
     /* Hero section padding for tablet */

@@ -33,29 +33,29 @@
   
   /* iPhone and small mobile devices (max-width: 480px) */
   @media screen and (max-width: 480px) {
-    /* Header adjustments for iPhone */
+    /* Header adjustments for iPhone - Increased to accommodate larger logo */
     header {
-      height: 4rem !important; /* 64px */
-      min-height: 4rem !important;
+      height: 5.5rem !important; /* 88px - increased from 64px */
+      min-height: 5.5rem !important;
     }
     
-    /* Logo sizing for iPhone - Increased to ~75% of header height */
+    /* Logo sizing for iPhone - Increased by 150% from original */
     .header-logo {
-      width: 3rem !important; /* 48px - ~75% of 64px */
-      height: 3rem !important; /* 48px - ~75% of 64px */
-      max-width: 3rem !important;
-      max-height: 3rem !important;
+      width: 4.5rem !important; /* 72px - 150% of original 48px */
+      height: 4.5rem !important; /* 72px - 150% of original 48px */
+      max-width: 4.5rem !important;
+      max-height: 4.5rem !important;
     }
     
-    /* Header text sizing for iPhone */
+    /* Header text sizing for iPhone - Increased proportionally */
     .header-text {
-      font-size: 0.875rem !important; /* 14px - increased from 12px */
-      line-height: 1.25rem !important;
+      font-size: 1.125rem !important; /* 18px - increased from 14px */
+      line-height: 1.5rem !important;
     }
     
-    /* Hero section padding for iPhone */
+    /* Hero section padding for iPhone - Adjusted for larger header */
     .hero-content {
-      padding-top: 5rem !important; /* 80px - accounts for header height */
+      padding-top: 6.5rem !important; /* 104px - accounts for increased header height */
     }
     
     /* Hero title sizing for iPhone */
@@ -79,29 +79,29 @@
   
   /* Mobile general (max-width: 768px) */
   @media screen and (max-width: 768px) {
-    /* Header adjustments for mobile */
+    /* Header adjustments for mobile - Increased to accommodate larger logo */
     header {
-      height: 4.5rem !important; /* 72px */
-      min-height: 4.5rem !important;
+      height: 6rem !important; /* 96px - increased from 72px */
+      min-height: 6rem !important;
     }
     
-    /* Logo sizing for mobile - Increased to ~75% of header height */
+    /* Logo sizing for mobile - Increased by 150% from original */
     .header-logo {
-      width: 3.4rem !important; /* 54.4px - ~75% of 72px */
-      height: 3.4rem !important; /* 54.4px - ~75% of 72px */
-      max-width: 3.4rem !important;
-      max-height: 3.4rem !important;
+      width: 5.1rem !important; /* 81.6px - 150% of original 54.4px */
+      height: 5.1rem !important; /* 81.6px - 150% of original 54.4px */
+      max-width: 5.1rem !important;
+      max-height: 5.1rem !important;
     }
     
-    /* Header text sizing for mobile */
+    /* Header text sizing for mobile - Increased proportionally */
     .header-text {
-      font-size: 1rem !important; /* 16px - increased from 14px */
-      line-height: 1.5rem !important;
+      font-size: 1.25rem !important; /* 20px - increased from 16px */
+      line-height: 1.75rem !important;
     }
     
-    /* Hero section padding for mobile */
+    /* Hero section padding for mobile - Adjusted for larger header */
     .hero-content {
-      padding-top: 5.5rem !important; /* 88px - accounts for header height */
+      padding-top: 7rem !important; /* 112px - accounts for increased header height */
     }
     
     /* Hero title sizing for mobile */
@@ -125,29 +125,29 @@
   
   /* Tablet (max-width: 1024px) */
   @media screen and (max-width: 1024px) {
-    /* Header adjustments for tablet */
+    /* Header adjustments for tablet - Increased to accommodate larger logo */
     header {
-      height: 5rem !important; /* 80px */
-      min-height: 5rem !important;
+      height: 6.5rem !important; /* 104px - increased from 80px */
+      min-height: 6.5rem !important;
     }
     
-    /* Logo sizing for tablet - Increased to ~75% of header height */
+    /* Logo sizing for tablet - Increased by 150% from original */
     .header-logo {
-      width: 3.8rem !important; /* 60.8px - ~75% of 80px */
-      height: 3.8rem !important; /* 60.8px - ~75% of 80px */
-      max-width: 3.8rem !important;
-      max-height: 3.8rem !important;
+      width: 5.7rem !important; /* 91.2px - 150% of original 60.8px */
+      height: 5.7rem !important; /* 91.2px - 150% of original 60.8px */
+      max-width: 5.7rem !important;
+      max-height: 5.7rem !important;
     }
     
-    /* Header text sizing for tablet */
+    /* Header text sizing for tablet - Increased proportionally */
     .header-text {
-      font-size: 1.125rem !important; /* 18px - increased from 16px */
-      line-height: 1.75rem !important;
+      font-size: 1.375rem !important; /* 22px - increased from 18px */
+      line-height: 2rem !important;
     }
     
-    /* Hero section padding for tablet */
+    /* Hero section padding for tablet - Adjusted for larger header */
     .hero-content {
-      padding-top: 6rem !important; /* 96px - accounts for header height */
+      padding-top: 7.5rem !important; /* 120px - accounts for increased header height */
     }
     
     /* Hero title sizing for tablet */

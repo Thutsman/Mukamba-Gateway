@@ -7,7 +7,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
       </div>
 
              {/* Content */}
-       <div className="relative z-10 container-custom text-center text-white pt-24 sm:pt-28">
+       <div className="relative z-10 container-custom text-center text-white pt-28 sm:pt-32 md:pt-36">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -16,7 +16,7 @@ const WhyJoinEarly: React.FC<WhyJoinEarlyProps> = ({ onSignUp }) => {
     },
     {
       icon: Zap,
-      title: "6 months Concierge Access for free",
+      title: "6 months Concierge Access for\u00A0free",
       description: "Buyers joining early get 6 months free concierge access to buying homes in instalments",
       color: "text-red-500"
     },
@@ -89,7 +89,7 @@ const WhyJoinEarly: React.FC<WhyJoinEarlyProps> = ({ onSignUp }) => {
                              <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 rounded-full bg-[#7f1518] flex items-center justify-center group-hover:bg-[#6a1215] transition-all duration-300">
                  <benefit.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
+              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 leading-tight card-title">
                 {benefit.title}
               </h3>
               <p className="text-sm sm:text-base text-gray-300 leading-relaxed">

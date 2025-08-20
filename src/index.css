@@ -11,6 +11,19 @@
     font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.6;
   }
+
+  /* Fix for mobile viewport issues */
+  @supports (height: 100dvh) {
+    .min-h-screen {
+      min-height: 100dvh;
+    }
+  }
+
+  /* Prevent orphaned words in titles */
+  .card-title {
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
 }
 
 @layer components {

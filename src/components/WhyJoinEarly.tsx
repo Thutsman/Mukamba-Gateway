@@ -9,21 +9,21 @@ interface WhyJoinEarlyProps {
 const WhyJoinEarly: React.FC<WhyJoinEarlyProps> = ({ onSignUp }) => {
   const benefits = [
     {
-      icon: Zap,
-      title: "First Access",
-      description: "Get exclusive access to property listings before public launch",
+      icon: DollarSign,
+      title: "$0 Fees",
+      description: "By joining early access you get $0 charges for onboarding up to 10 units before launch",
       color: "text-red-500"
     },
     {
-      icon: DollarSign,
-      title: "Lower Costs",
-      description: "Significantly reduced transaction costs compared to traditional agents",
+      icon: Zap,
+      title: "6 months Concierge Access for free",
+      description: "Buyers joining early get 6 months free concierge access to buying homes in instalments",
       color: "text-red-500"
     },
     {
       icon: Home,
-      title: "Flexible Purchase",
-      description: "Multiple payment options including installment plans",
+      title: "Notifications before anyone else",
+      description: "All instalment plan houses in SA and Zim straight to your inbox before launch",
       color: "text-red-500"
     },
     {
@@ -86,9 +86,9 @@ const WhyJoinEarly: React.FC<WhyJoinEarlyProps> = ({ onSignUp }) => {
               variants={itemVariants}
               className="bg-gray-900 rounded-xl p-4 sm:p-6 text-center group hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 rounded-full bg-red-600 flex items-center justify-center group-hover:bg-red-700 transition-all duration-300">
-                <benefit.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-              </div>
+                             <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 rounded-full bg-[#7f1518] flex items-center justify-center group-hover:bg-[#6a1215] transition-all duration-300">
+                 <benefit.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
                 {benefit.title}
               </h3>

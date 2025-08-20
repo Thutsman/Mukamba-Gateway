@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
 import WhyJoinEarly from './components/WhyJoinEarly';
+import Banner from './components/Banner';
 import Footer from './components/Footer';
 import SignupModal from './components/SignupModal';
 
@@ -19,6 +20,7 @@ function App() {
       <Hero onSignUp={openModal} />
       <WhatWeDo onSignUp={openModal} />
       <WhyJoinEarly onSignUp={openModal} />
+      <Banner />
       <Footer />
       
       <AnimatePresence>

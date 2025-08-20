@@ -12,19 +12,19 @@ const WhatWeDo: React.FC<WhatWeDoProps> = ({ onSignUp }) => {
       icon: Home,
       title: "Buy Homes",
       description: "Purchase properties outright or through flexible installment plans that work for you.",
-      gradient: "from-red-500 to-red-600"
+      gradient: "from-[#7f1518] to-[#7f1518]"
     },
     {
       icon: DollarSign,
       title: "Sell Property",
       description: "List and sell your property without paying expensive agent fees and commissions.",
-      gradient: "from-red-500 to-red-600"
+      gradient: "from-[#7f1518] to-[#7f1518]"
     },
     {
       icon: Building,
       title: "Manage Portfolios",
       description: "Easily manage portfolios of 10+ properties with our intuitive platform tools.",
-      gradient: "from-red-500 to-red-600"
+      gradient: "from-[#7f1518] to-[#7f1518]"
     }
   ];
 

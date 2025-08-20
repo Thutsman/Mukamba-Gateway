@@ -58,7 +58,7 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Launching soon! Be part of the early access community
+            Launching soon! Landlords, Sellers, Tenants and Buyers in one place
           </motion.p>
 
           <motion.div 
@@ -81,7 +81,7 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            Already signed up? We'll notify you when ready
+            Already signed up? You will get an email as soon as we are ready to launch
           </motion.p>
         </motion.div>
       </div>

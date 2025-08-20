@@ -56,19 +56,10 @@ const Header: React.FC<HeaderProps> = ({ onSignUp }) => {
              >
                What We Do
              </motion.button>
-                         <motion.button
-               initial={{ opacity: 0, y: -10 }}
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.6, delay: 0.2 }}
-               onClick={() => scrollToSection('why-join-early')}
-               className="text-gray-800 hover:text-primary transition-colors duration-300 font-medium"
-             >
-               Early Access
-             </motion.button>
             <motion.button
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               onClick={onSignUp}
               className="btn-primary text-sm px-6 py-2"
             >
@@ -106,20 +97,14 @@ const Header: React.FC<HeaderProps> = ({ onSignUp }) => {
           <div className="py-4 space-y-4">
                          <button
                onClick={() => scrollToSection('what-we-do')}
-               className="block w-full text-left px-4 py-3 text-gray-800 hover:text-primary hover:bg-gray-100 transition-colors duration-300 font-medium"
+               className="block w-full text-left px-4 py-3 text-gray-800 hover:text-primary hover:bg-gray-100 transition-colors duration-300 font-medium text-base sm:text-lg"
              >
                What We Do
-             </button>
-                         <button
-               onClick={() => scrollToSection('why-join-early')}
-               className="block w-full text-left px-4 py-3 text-gray-800 hover:text-primary hover:bg-gray-100 transition-colors duration-300 font-medium"
-             >
-               Early Access
              </button>
             <div className="px-4">
               <button
                 onClick={onSignUp}
-                className="w-full btn-primary text-sm py-3"
+                className="w-full btn-primary text-sm sm:text-base py-3"
               >
                 Sign Up
               </button>

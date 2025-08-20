@@ -18,8 +18,8 @@ const Hero: React.FC<HeroProps> = ({ onSignUp }) => {
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
 
-             {/* Content */}
-       <div className="relative z-10 container-custom text-center text-white pt-24 sm:pt-28 md:pt-32">
+      {/* Content */}
+      <div className="relative z-10 container-custom text-center text-white pt-24 sm:pt-28 md:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

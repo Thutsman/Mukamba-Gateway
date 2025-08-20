@@ -27,6 +27,148 @@
     padding-top: env(safe-area-inset-top);
   }
 
+  /* ===== RESPONSIVE BREAKPOINTS ===== */
+  
+  /* Mobile First Approach - Base styles for all devices */
+  
+  /* iPhone and small mobile devices (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    /* Header adjustments for iPhone */
+    header {
+      height: 4rem !important; /* 64px */
+      min-height: 4rem !important;
+    }
+    
+    /* Logo sizing for iPhone */
+    .header-logo {
+      width: 2rem !important; /* 32px */
+      height: 2rem !important; /* 32px */
+      max-width: 2rem !important;
+      max-height: 2rem !important;
+    }
+    
+    /* Header text sizing for iPhone */
+    .header-text {
+      font-size: 0.75rem !important; /* 12px */
+      line-height: 1rem !important;
+    }
+    
+    /* Hero section padding for iPhone */
+    .hero-content {
+      padding-top: 5rem !important; /* 80px - accounts for header height */
+    }
+    
+    /* Hero title sizing for iPhone */
+    .hero-title {
+      font-size: 2rem !important; /* 32px */
+      line-height: 2.5rem !important;
+    }
+    
+    /* Hero subtitle sizing for iPhone */
+    .hero-subtitle {
+      font-size: 1.125rem !important; /* 18px */
+      line-height: 1.5rem !important;
+    }
+    
+    /* Hero description sizing for iPhone */
+    .hero-description {
+      font-size: 0.875rem !important; /* 14px */
+      line-height: 1.25rem !important;
+    }
+  }
+  
+  /* Mobile general (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    /* Header adjustments for mobile */
+    header {
+      height: 4.5rem !important; /* 72px */
+      min-height: 4.5rem !important;
+    }
+    
+    /* Logo sizing for mobile */
+    .header-logo {
+      width: 2.5rem !important; /* 40px */
+      height: 2.5rem !important; /* 40px */
+      max-width: 2.5rem !important;
+      max-height: 2.5rem !important;
+    }
+    
+    /* Header text sizing for mobile */
+    .header-text {
+      font-size: 0.875rem !important; /* 14px */
+      line-height: 1.25rem !important;
+    }
+    
+    /* Hero section padding for mobile */
+    .hero-content {
+      padding-top: 5.5rem !important; /* 88px - accounts for header height */
+    }
+    
+    /* Hero title sizing for mobile */
+    .hero-title {
+      font-size: 2.5rem !important; /* 40px */
+      line-height: 3rem !important;
+    }
+    
+    /* Hero subtitle sizing for mobile */
+    .hero-subtitle {
+      font-size: 1.25rem !important; /* 20px */
+      line-height: 1.75rem !important;
+    }
+    
+    /* Hero description sizing for mobile */
+    .hero-description {
+      font-size: 1rem !important; /* 16px */
+      line-height: 1.5rem !important;
+    }
+  }
+  
+  /* Tablet (max-width: 1024px) */
+  @media screen and (max-width: 1024px) {
+    /* Header adjustments for tablet */
+    header {
+      height: 5rem !important; /* 80px */
+      min-height: 5rem !important;
+    }
+    
+    /* Logo sizing for tablet */
+    .header-logo {
+      width: 3rem !important; /* 48px */
+      height: 3rem !important; /* 48px */
+      max-width: 3rem !important;
+      max-height: 3rem !important;
+    }
+    
+    /* Header text sizing for tablet */
+    .header-text {
+      font-size: 1rem !important; /* 16px */
+      line-height: 1.5rem !important;
+    }
+    
+    /* Hero section padding for tablet */
+    .hero-content {
+      padding-top: 6rem !important; /* 96px - accounts for header height */
+    }
+    
+    /* Hero title sizing for tablet */
+    .hero-title {
+      font-size: 3.5rem !important; /* 56px */
+      line-height: 4rem !important;
+    }
+    
+    /* Hero subtitle sizing for tablet */
+    .hero-subtitle {
+      font-size: 1.5rem !important; /* 24px */
+      line-height: 2rem !important;
+    }
+    
+    /* Hero description sizing for tablet */
+    .hero-description {
+      font-size: 1.125rem !important; /* 18px */
+      line-height: 1.75rem !important;
+    }
+  }
+
   /* iOS Safari specific viewport fixes */
   @supports (-webkit-touch-callout: none) {
     /* iOS Safari specific styles */
@@ -45,40 +187,6 @@
     header {
       overflow: hidden;
       contain: layout style paint;
-    }
-    
-    /* iOS-specific logo sizing - reduce logo size on iOS only */
-    .w-35 {
-      width: 2.5rem !important; /* 40px instead of 140px */
-    }
-    
-    .h-35 {
-      height: 2.5rem !important; /* 40px instead of 140px */
-    }
-    
-    /* iOS-specific text sizing for logo text */
-    .ios-logo-text {
-      font-size: 0.875rem !important; /* 14px */
-      line-height: 1.25rem !important;
-    }
-    
-    .ios-logo-text-large {
-      font-size: 1rem !important; /* 16px */
-      line-height: 1.5rem !important;
-    }
-    
-    /* iOS-specific header logo container adjustments */
-    header .flex-shrink-0 {
-      max-height: 3rem !important; /* 48px max height for iOS */
-      overflow: hidden !important;
-    }
-    
-    /* iOS-specific logo image container */
-    header .w-35.h-35 {
-      max-width: 2.5rem !important;
-      max-height: 2.5rem !important;
-      width: 2.5rem !important;
-      height: 2.5rem !important;
     }
   }
 

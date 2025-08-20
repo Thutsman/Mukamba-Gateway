@@ -27,9 +27,9 @@ const Header: React.FC<HeaderProps> = ({ onSignUp }) => {
   };
 
   return (
-         <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg safe-top">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg safe-top">
       <div className="container-custom">
-                 <div className="flex items-center justify-between h-20 sm:h-24 md:h-28">
+        <div className="flex items-center justify-between h-20 sm:h-24 md:h-28">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ onSignUp }) => {
               onClick={() => scrollToSection('hero')}
               className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-1"
             >
-                             <Logo logoType="image" imageSrc="/logo.svg" size="xl" />
+              <Logo logoType="image" imageSrc="/logo.svg" size="xl" />
             </button>
           </motion.div>
 

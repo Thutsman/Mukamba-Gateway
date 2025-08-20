@@ -5,17 +5,46 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
     font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
   }
 
   /* Fix for mobile viewport issues */
   @supports (height: 100dvh) {
     .min-h-screen {
       min-height: 100dvh;
+    }
+  }
+
+  /* iOS Safari viewport and safe area fixes */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  /* iOS Safari specific viewport fixes */
+  @supports (-webkit-touch-callout: none) {
+    /* iOS Safari specific styles */
+    .fixed {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+    
+    /* Ensure proper viewport height on iOS */
+    .min-h-\[100dvh\] {
+      min-height: -webkit-fill-available;
+      min-height: 100dvh;
+    }
+    
+    /* Prevent header overflow on iOS */
+    header {
+      overflow: hidden;
+      contain: layout style paint;
     }
   }
 

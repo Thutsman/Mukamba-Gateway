@@ -46,6 +46,40 @@
       overflow: hidden;
       contain: layout style paint;
     }
+    
+    /* iOS-specific logo sizing - reduce logo size on iOS only */
+    .w-35 {
+      width: 2.5rem !important; /* 40px instead of 140px */
+    }
+    
+    .h-35 {
+      height: 2.5rem !important; /* 40px instead of 140px */
+    }
+    
+    /* iOS-specific text sizing for logo text */
+    .ios-logo-text {
+      font-size: 0.875rem !important; /* 14px */
+      line-height: 1.25rem !important;
+    }
+    
+    .ios-logo-text-large {
+      font-size: 1rem !important; /* 16px */
+      line-height: 1.5rem !important;
+    }
+    
+    /* iOS-specific header logo container adjustments */
+    header .flex-shrink-0 {
+      max-height: 3rem !important; /* 48px max height for iOS */
+      overflow: hidden !important;
+    }
+    
+    /* iOS-specific logo image container */
+    header .w-35.h-35 {
+      max-width: 2.5rem !important;
+      max-height: 2.5rem !important;
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+    }
   }
 
   /* Prevent orphaned words in titles */

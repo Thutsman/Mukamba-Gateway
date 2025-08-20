@@ -79,10 +79,10 @@ const Logo: React.FC<LogoProps> = ({
       {/* Logo Text - Only show if showText is true */}
       {showText && (
         <div className="flex flex-col">
-          <span className={`font-bold tracking-wide ${size === 'sm' ? 'text-base' : size === 'md' ? 'text-xl' : size === 'lg' ? 'text-2xl' : 'text-4xl'} ${colorClasses[color]}`}>
+          <span className={`font-bold tracking-wide ios-logo-text ${size === 'sm' ? 'text-base' : size === 'md' ? 'text-xl' : size === 'lg' ? 'text-2xl' : 'text-4xl'} ${colorClasses[color]}`}>
             Mukamba
           </span>
-          <span className={`font-semibold tracking-wider ${size === 'sm' ? 'text-sm' : size === 'md' ? 'text-lg' : size === 'lg' ? 'text-xl' : 'text-2xl'} ${color === 'white' ? 'text-gray-100' : color === 'dark' ? 'text-gray-700' : 'text-red-600'}`}>
+          <span className={`font-semibold tracking-wider ios-logo-text-large ${size === 'sm' ? 'text-sm' : size === 'md' ? 'text-lg' : size === 'lg' ? 'text-xl' : 'text-2xl'} ${color === 'white' ? 'text-gray-100' : color === 'dark' ? 'text-gray-700' : 'text-red-600'}`}>
             GATEWAY
           </span>
         </div>
